@@ -200,3 +200,7 @@ https://github.com/RENyunfan/ooqp_group
 ```bash
 timedatectl set-local-rtc 1
 ```
+# 14 Shutdown Time
+```bash
+DefaultTimeoutStopSec=3s
+```
