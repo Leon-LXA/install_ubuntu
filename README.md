@@ -15,9 +15,9 @@ chsh -s /bin/zsh
 2）安装ohmyzsh
 
 ```bash
-wget -p ~/ https://github.com/ohmyzsh/ohmyzsh/blob/master/tools/install.sh
-sudo chmod +x ~/install.sh
-sh ~/install.sh
+wget https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh
+sudo chmod +x ./install.sh
+sh ./install.sh
 ```
 
 3）安装插件
@@ -52,6 +52,8 @@ alias pych=""
 # export PATH=~/anaconda3/bin:$PATH
 
 setopt no_nomatch # 允许使用 *缺省
+#For ROS
+#source /opt/ros/noetic/setup.zsh
 ```
 
 4）安装terminator
@@ -138,7 +140,7 @@ sudo ln -s /usr/include/pcl-1.8/pcl /usr/include/pcl
 
 clion装好后要装三个插件比较舒服
 
-* CodeGlance
+* CodeGlance Pro
 * Hatchery
 * Rainbow Brackets
 
@@ -194,3 +196,7 @@ sudo mv backward.hpp /usr/include
 
 https://github.com/RENyunfan/ooqp_group
 
+# 13 TIME CONFLICT
+```
+timedatectl set-local-rtc 1
+```
