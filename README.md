@@ -197,6 +197,6 @@ sudo mv backward.hpp /usr/include
 https://github.com/RENyunfan/ooqp_group
 
 # 13 TIME CONFLICT
-```
+```bash
 timedatectl set-local-rtc 1
 ```
