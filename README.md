@@ -204,4 +204,5 @@ timedatectl set-local-rtc 1
 ```bash
 sudo gedit /etc/systemd/system.conf
 DefaultTimeoutStopSec=3s
+systemctl daemon-reload
 ```
