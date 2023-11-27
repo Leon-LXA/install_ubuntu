@@ -202,5 +202,6 @@ timedatectl set-local-rtc 1
 ```
 # 14 Shutdown Time
 ```bash
+sudo gedit /etc/systemd/system.conf
 DefaultTimeoutStopSec=3s
 ```
