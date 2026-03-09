@@ -219,3 +219,10 @@ sudo gedit /etc/systemd/system.conf
 DefaultTimeoutStopSec=3s
 systemctl daemon-reload
 ```
+
+# 15 proxy setting in terminal
+```bash
+# --- 终端代理快捷开关 (Clash Verge Rev 专用) ---
+alias proxy='export https_proxy=http://127.0.0.1:7897 http_proxy=http://127.0.0.1:7897 all_proxy=socks5://127.0.0.1:7897'
+alias unproxy='unset https_proxy http_proxy all_proxy'
+```
