@@ -226,3 +226,24 @@ systemctl daemon-reload
 alias proxy='export https_proxy=http://127.0.0.1:7897 http_proxy=http://127.0.0.1:7897 all_proxy=socks5://127.0.0.1:7897'
 alias unproxy='unset https_proxy http_proxy all_proxy'
 ```
+
+# 16 雾凇rime输入法
+```bash
+# 
+sudo apt install ibus-rime git -y
+
+mkdir -p ~/.config/ibus/rime/
+cd ~/.config/ibus/rime/
+
+git clone --depth 1 https://github.com/iDvel/rime-ice.git .
+```
+如果设置里找不到 Rime，先刷新 IBus 守护进程：
+```
+ibus-daemon -drx
+```
+手动操作： 1. 打开 Settings -> Keyboard -> Input Sources。
+2. 点击 + -> Chinese -> Chinese (Rime) -> Add。
+
+- 重启 IBus：ibus restart
+- 查看配置是否到位：ls ~/.config/ibus/rime/ (确认包含 rime_ice.schema.yaml)
+- 切换简繁/方案：输入法激活状态下按 F4 或 Ctrl + ~。
