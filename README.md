@@ -226,6 +226,12 @@ systemctl daemon-reload
 alias proxy='export https_proxy=http://127.0.0.1:7897 http_proxy=http://127.0.0.1:7897 all_proxy=socks5://127.0.0.1:7897'
 alias unproxy='unset https_proxy http_proxy all_proxy'
 ```
+```bash
+# --- 终端 + Git 全能代理开关 ---
+alias proxy='export https_proxy=http://127.0.0.1:7897 http_proxy=http://127.0.0.1:7897 all_proxy=socks5://127.0.0.1:7897; git config --global http.proxy http://127.0.0.1:7897; git config --global https.proxy http://127.0.0.1:7897; echo "🚀 系统及 Git 代理已开启 (7897)"'
+
+alias unproxy='unset https_proxy http_proxy all_proxy; git config --global --unset http.proxy; git config --global --unset https.proxy; echo "🛑 系统及 Git 代理已关闭"'
+```
 
 # 16 雾凇rime输入法
 ```bash
